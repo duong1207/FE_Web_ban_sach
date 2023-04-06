@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:focus {
+    outline: 0px solid
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(240, 179, 255, 0.3);
+    box-sizing: border-box;
+}
+
+.mainmenu_area {
+    display: block;
+    background: none repeat scroll 0 0 rgb(128, 159, 255);
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+    height: 40px;
+    z-index: 999;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    left: 0;
+    bottom: 80px;
+}
+
+.nav-menu-ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    height: 100%;
+}
+
+.nav-menu-ul li:hover {
+    height: 100%;
+    background-color: rgb(255, 26, 26);
+}
+
+.nav-menu-ul li a {
+    color: black;
+}
+
+.nav-search {
+    margin: 0 30px 0;
+}
+
+.nav-input {
+    height: 40px;
+    width: 300px;
+    outline: none;
+    border: none;
+}
+
+.nav-fonts {
+    padding: 10px;
+    margin: 0;
+}
+
+.nav__sub {
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    background-color: #bf80ff;
+}
+
+.nav-menu-ul li:hover .nav__sub {
+    display: block;
+}
+
+.nav_bar_btn {
+    display: none;
+    font-size: 30px;
+}
+
+
+/*mobile*/
+
+.nav-menu_mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(128, 159, 255);
+    transform: translateX(-150%);
+    opacity: 0;
+    transition: transform linear 0.4s;
+}
+
+.nav_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+
+.nav-menu-ul-mobile li {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.nav-menu-ul-mobile a {
+    color: black;
+}
+
+.nav_input-mobile:checked~.nav_overlay {
+    display: block;
+}
+
+.nav_input-mobile:checked~.nav-menu_mobile {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+/*header*/
+
+.header-area {
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 85px;
+}
+
+.row1 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.user-menu ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.user-menu ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.user-menu a {
+    text-decoration: none;
+}
+
+.user-menu li a {
+    display: block;
+    font-size: 13px;
+    margin-right: 5px;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.user-menu li a:hover {
+    color: grey;
+}
+
+
+/*<!-- End header area -->*/
+
+
+/*site-branding-area*/
+
+.site-branding-area {
+    background-color: rgb(242, 230, 255);
+    height: 150px;
+}
+
+.logo img {
+    border-radius: 50%;
+    width: 120px;
+}
+
+.logo_TGTT {
+    text-align: center;
+    display: block;
+    width: 400px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.logo_th_TGTT {
+    color: rgba(92, 0, 230, 1);
+    font-size: 3em;
+}
+
+.logo_dc_tgtt {
+    color: black;
+    font-size: 20px;
+}
+
+.shopping-item {
+    background-color: rgb(229, 204, 255);
+    border: 1px solid #ddd;
+    float: right;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-right: 40px;
+    padding: 10px;
+    position: relative;
+}
+
+.shopping-item:hover {
+    background-color: rgb(128, 159, 255);
+}
+
+.shopping-item a {
+    color: #666;
+    text-decoration: none;
+}
+
+.cart-amunt {
+    color: #ee5057;
+    font-weight: 700;
+}
+
+.hoang {
+    width: 100%;
+    /*margin: 0 20px;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.product-carousel-price {
+    transform-origin: 50% 50%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0.5s;
+}
+
+.Product {
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+.section-title {
+    /*margin: auto;*/
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+}
+
+.product-carousel {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.single-product {
+    background-color: rgba(15, 35, 219, 0.2);
+    margin: 10px;
+    border: 5px solid blue;
+}
+
+.single-product:hover {
+    background-color: rgba(480, 50%, 80%, 0.3);
+    color: rgb(104, 23, 235);
+    text-transform: uppercase;
+}
+
+.single-product img {
+    width: 212px;
+    height: 212px;
+}
+
+.single-product h2 {
+    width: 212px;
+    font-size: 18px;
+    line-height: 100%;
+    margin-bottom: 10px 0;
+}
+
+.single-product h2 a {
+    opacity: 0;
+    border: double;
+    background: transparent;
+    margin: 20px 40px 10px 40px;
+    transform: scale(10);
+    transition: all 0.3s ease-in-out 0.1s;
+}
+
+
+}
+.product-carousel-price ins {
+    font-size: 20px;
+    color: pink;
+    margin-right: 5px;
+    text-decoration: none;
+}
+.product-carousel-price del {
+    font-size: 17px;
+    color: green;
+    margin-right: 5px;
+    text-decoration: line-through;
+}
+.product-carousel-price {
+    transform-origin: 50% 50%;
+    opacity: 0;
+    transition: transform linear 0.5s;
+}
+.single-product:hover .product-carousel-price {
+    transform: translateY(0);
+    opacity: 1;
+}
+.product-hover a {
+    display: block;
+    font-size: 20px;
+    margin: 5px 10px;
+    padding: 5px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.product-hover a:hover {
+    background-color: #ee5057;
+    padding: 10px;
+    color: orange;
+}
+
+/*//////*/
+.product-widget-area {
+    border-top: 1px solid;
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+.single-product-widget {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product-f-image {
+    padding-top: 10px;
+}
+.product-hover a i.fa {
+    margin-right: 5px;
+}
+.single-wid-product:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.single-wid-product .product-thumb {
+    width: 212px;
+    height: 212px;
+}
+.single-wid-product h2 {
+    font-size: 18px;
+    width: 212px;
+    text-align: center;
+}
+.product-wid-rating .fa-star {
+    color: orange;
+}
+.product-wid-price ins {
+    color: #ee5057;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.product-wid-price {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform linear 0.5s;
+}

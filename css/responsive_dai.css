@@ -1,0 +1,59 @@
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 701px) and (max-width: 991px) { 
+  .logo_th_TGTT{
+   font-size: 2em;
+   width:100% ;
+ }
+}
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 700px) {
+ .nav-menu{
+  display: none;
+  background: none repeat scroll 0 0 #bf80ff;
+  font-family: "Roboto Condensed",sans-serif;
+  text-transform: uppercase;
+}
+
+.nav_bar_btn{
+  display: block;
+}
+
+.nav-search{
+    clear: both;
+    display: flex;
+  width: 300px;
+}
+
+.nav-input{
+  height: 100%;
+}
+
+.logo_TGTT{
+ width: 200px;
+}
+
+.logo_th_TGTT{
+  color: rgba(92, 0, 230, 1);
+  font-size: 1.8em;
+}
+.logo_dc_tgtt{
+  color:black;
+  font-size: 20px;
+}
+
+.shopping-item {
+  background-color: rgb(229, 204, 255);
+  border: 1px solid #ddd;
+  float: right;
+  font-size: 15px;
+  margin-top: 40px;
+  margin-right: 20px;
+  padding: 6px;
+  position: relative;
+}
+.nav-input{
+  height: 26px;
+  width: 100%;
+}
+}
